@@ -8,15 +8,38 @@
 
     <TextView
         android:id="@+id/creditsTextView"
-        android:layout_width="169dp"
-        android:layout_height="139dp"
+        android:layout_width="258dp"
+        android:layout_height="32dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:text="Hi this is a placeholder"
+        android:text="Credits & Acknowledgments"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="255dp"
+        android:layout_height="246dp"
+        app:srcCompat="@drawable/chicken_1f414"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Team HackAustin:                                                      Stanley Lok                    Emily Yu                                Austin Chow"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="86dp" />
+
 </android.support.constraint.ConstraintLayout>
