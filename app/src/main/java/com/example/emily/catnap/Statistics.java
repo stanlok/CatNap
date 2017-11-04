@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
+//import com.jjoe64.graphview.GridLabelRenderer;
 
 public class Statistics extends AppCompatActivity {
 
@@ -25,7 +26,8 @@ public class Statistics extends AppCompatActivity {
         series.setDrawDataPoints(true);
         series.setDataPointsRadius(10);
         series.setThickness(7);
-
+//        series.setVerticalAxisTitle("Minutes slept");
+//        series.setHorizontalAxisTitle("Hours");
         graph.addSeries(series);
     }
 

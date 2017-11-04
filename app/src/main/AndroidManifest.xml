@@ -18,12 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TermsAndConditions"></activity>
         <activity android:name=".Customize" />
         <activity android:name=".Statistics" />
         <activity
             android:name=".Credits"
             android:label="@string/title_activity_credits"
             android:theme="@style/AppTheme.NoActionBar" />
-    </application>
+        </application>
 
 </manifest>
