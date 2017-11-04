@@ -16,7 +16,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text='Terms & Conditions ("Terms")'
+        android:text='Terms and Conditions ("Terms")'
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
         android:typeface="normal"
