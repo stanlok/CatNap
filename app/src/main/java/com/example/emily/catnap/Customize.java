@@ -50,7 +50,7 @@ public class Customize extends AppCompatActivity {
         toggleSnooze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (toggleSnooze.getText().toString().equals("Off")) {
+                if (snoozed == true) {
                     set_toggle_snooze_text("On");
                     snoozed = false;
                 }
