@@ -15,6 +15,8 @@ public class Customize extends AppCompatActivity {
     Button cancelTime;
     Button toggleSnooze;
 
+    boolean snoozed = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,10 +50,14 @@ public class Customize extends AppCompatActivity {
         toggleSnooze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (toggleSnooze.getText().toString().equals("Off"))
+                if (snoozed == true) {
                     set_toggle_snooze_text("On");
-                else
+                    snoozed = false;
+                }
+                else {
                     set_toggle_snooze_text("Off");
+                    snoozed = true;
+                }
             }
         });
     }
