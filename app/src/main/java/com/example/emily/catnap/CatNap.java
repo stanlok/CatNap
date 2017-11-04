@@ -16,19 +16,19 @@ public class CatNap extends AppCompatActivity {
     Button statistics_button;
     Button credits_button;
 
-    boolean do_not_show = true;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat_nap);
+
+        final GlobalVars globalVariable = (GlobalVars) getApplicationContext();
 
         customize_button = findViewById(R.id.customizeNavButton);
 
         customize_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (do_not_show == false)
+                if (globalVariable.get_do_not_show() == false)
                     startActivity(new Intent(CatNap.this, TermsAndConditions.class));
                 else
                     startActivity(new Intent(CatNap.this, Customize.class));

@@ -15,12 +15,13 @@ public class Customize extends AppCompatActivity {
     Button cancelTime;
     Button toggleSnooze;
 
-    boolean snoozed = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customize);
+
+        final GlobalVars globalVariable = (GlobalVars) getApplicationContext();
 
         start_time = findViewById(R.id.startTimePicker);
         end_time = findViewById(R.id.endTimePicker);
@@ -47,16 +48,20 @@ public class Customize extends AppCompatActivity {
 
         toggleSnooze = findViewById(R.id.customizeToggleButton);
 
+        if (globalVariable.get_snoozed() == false) {
+            set_toggle_snooze_text("On");
+        }
+
         toggleSnooze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (snoozed == true) {
+                if (globalVariable.get_snoozed() == true) {
                     set_toggle_snooze_text("On");
-                    snoozed = false;
+                    globalVariable.set_snoozed(false);
                 }
                 else {
                     set_toggle_snooze_text("Off");
-                    snoozed = true;
+                    globalVariable.set_snoozed(true);
                 }
             }
         });

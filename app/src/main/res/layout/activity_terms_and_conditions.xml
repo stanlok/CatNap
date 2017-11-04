@@ -31,35 +31,65 @@
         android:id="@+id/TnCTextView"
         android:layout_width="318dp"
         android:layout_height="391dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Please read these terms and conditions of use carefully before accessing or using this application.                                                                                                                     This application is designed to aid the user in maintaining a consistent sleep schedule and pattern to ensure proper rest. While the application is running, after a specified number of alerts and notifications before the specified “sleep time,” all set by the user, the application will LOCK the phone screen at “sleep time.”                                                                           We hope this application will assist you in reaching that quality goodnight’s sleep, so you will be well-rested, well-prepared, and ready to conquer anything that comes your way. :) "
         android:textAlignment="viewStart"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/doNotShowCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Do not show this message again."
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
 
     <Button
         android:id="@+id/agreeTnCButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="AGREE"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="460dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/declineTnCButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="textView"
-        tools:layout_editor_absoluteX="718dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Decline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
 
 </android.support.constraint.ConstraintLayout>
