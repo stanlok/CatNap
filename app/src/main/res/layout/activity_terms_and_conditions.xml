@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emily.catnap.TermsAndConditions">
+
+    <EditText
+        android:id="@+id/TnCTitle"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text='Terms & Conditions ("Terms")'
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <TextView
+        android:id="@+id/TnCTextView"
+        android:layout_width="318dp"
+        android:layout_height="391dp"
+        android:text="Please read these terms and conditions of use carefully before accessing or using this application.                                                                                                                     This application is designed to aid the user in maintaining a consistent sleep schedule and pattern to ensure proper rest. While the application is running, after a specified number of alerts and notifications before the specified “sleep time,” all set by the user, the application will LOCK the phone screen at “sleep time.”                                                                           We hope this application will assist you in reaching that quality goodnight’s sleep, so you will be well-rested, well-prepared, and ready to conquer anything that comes your way. :) "
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <CheckBox
+        android:id="@+id/doNotShowCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not show this message again."
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <Button
+        android:id="@+id/agreeTnCButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGREE"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        tools:layout_editor_absoluteX="718dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</android.support.constraint.ConstraintLayout>
