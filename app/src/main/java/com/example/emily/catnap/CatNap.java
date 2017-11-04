@@ -16,6 +16,8 @@ public class CatNap extends AppCompatActivity {
     Button statistics_button;
     Button credits_button;
 
+    boolean do_not_show = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +28,15 @@ public class CatNap extends AppCompatActivity {
         customize_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CatNap.this, Customize.class));
+                if (do_not_show == false)
+                    startActivity(new Intent(CatNap.this, TermsAndConditions.class));
+                else
+                    startActivity(new Intent(CatNap.this, Customize.class));
             }
         });
 
+
+        statistics_button = findViewById(R.id.statisticsNavButton);
 
         statistics_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +45,8 @@ public class CatNap extends AppCompatActivity {
             }
         });
 
+
+        credits_button = findViewById(R.id.creditsNavButton);
 
         credits_button.setOnClickListener(new View.OnClickListener() {
             @Override
