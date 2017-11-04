@@ -35,6 +35,7 @@ public class CatNap extends AppCompatActivity {
             }
         });
 
+        statistics_button = findViewById(R.id.statisticsNavButton);
 
         statistics_button = findViewById(R.id.statisticsNavButton);
 
@@ -45,6 +46,7 @@ public class CatNap extends AppCompatActivity {
             }
         });
 
+        credits_button = findViewById(R.id.creditsNavButton);
 
         credits_button = findViewById(R.id.creditsNavButton);
 
