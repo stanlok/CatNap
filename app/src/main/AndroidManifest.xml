@@ -26,6 +26,7 @@
             android:name=".Credits"
             android:label="@string/title_activity_credits"
             android:theme="@style/AppTheme.NoActionBar" />
+        <receiver android:name=".AlarmReceiver"/>
         </application>
 
 </manifest>
